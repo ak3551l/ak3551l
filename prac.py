@@ -1,5 +1,7 @@
-x = float(input("Enter value of x: "))
-y = float(input("Enter value of y: "))
+def hello(to):
+    print("hello, ", to)
 
-z = round(x/y, 2)
-print(z)
+name = input("Enter your name: ")
+hello(name)
+
+
