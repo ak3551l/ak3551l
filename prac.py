@@ -1,10 +1,8 @@
 def main():
-    name = input("Enter your name: ")
-    hello(name)
+    x = int(input("Value of x: "))
+    print(f"Squared of {x} is {square(x)}")
 
-
-
-def hello(to):
-    print("hello, ", to)
+def square(n):
+    return n*n
 
 main()
