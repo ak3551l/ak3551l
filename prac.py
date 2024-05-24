@@ -1,4 +1,5 @@
-name = input("Enter your name: ")
-name = name.strip()
-name = name.capitalize()
-print(f"Hello, {name}")
+x = int(input("Enter value of x: "))
+y = int(input("Enter value of y: "))
+
+z = x+y
+print(z)
