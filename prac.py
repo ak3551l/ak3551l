@@ -1,12 +1,8 @@
-def main():
-    x = int(input("Enter value of x: "))
-    if is_even(x):
-        print("Even Number")
-    else:
-        print("Odd Number")
+name = input("Enter your name: ")
 
-def is_even(n):
-    return True if n % 2 == 0 else False
-
-
-main()
+if name == "Harry" or "Hermoine" or "Ron":
+    print("Gryffindor")
+elif name == "Draco":
+    print("Slytherin")
+else:
+    print("Who?")
