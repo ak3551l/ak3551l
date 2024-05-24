@@ -1,5 +1,5 @@
-x = int(input("Enter value of x: "))
-y = int(input("Enter value of y: "))
+x = float(input("Enter value of x: "))
+y = float(input("Enter value of y: "))
 
-z = x+y
-print(z)
+z = round(x+y)
+print(f"{z:,}")
