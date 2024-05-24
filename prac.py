@@ -1,3 +1,4 @@
 name = input("Enter your name: ")
 name = name.strip()
-print(f"hello,   {name}")
+name = name.capitalize()
+print(f"Hello, {name}")
