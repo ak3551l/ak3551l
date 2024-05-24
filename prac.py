@@ -1,8 +1,7 @@
-def main():
-    x = int(input("Value of x: "))
-    print(f"Squared of {x} is {square(x)}")
+x = int(input("x: "))
+y = int(input("y: "))
 
-def square(n):
-    return n*n
-
-main()
+if x > y or x < y:
+    print("x is not equal to y.")
+else:
+    print("x is equal to y.")
