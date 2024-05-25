@@ -1,4 +1,13 @@
-i = 0
-while i != 3:
-    print("meow")
-    i += 1
+def main():
+    x = get_int()
+    print(f"x is {x}")
+
+
+def get_int():
+    while True:
+        try:
+            return int(input("Enter value of x: "))
+        except ValueError:
+            pass
+
+main()
