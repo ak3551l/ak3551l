@@ -1,4 +1,4 @@
-import random
+from random import choice
 
-choice = random.choice(["tails", "heads"])
+choice = choice(["tails", "heads"])
 print(choice)
