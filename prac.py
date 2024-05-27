@@ -1,4 +1,4 @@
-from random import choice
+from random import randint
 
-choice = choice(["tails", "heads"])
-print(choice)
+number = randint(1, 6)
+print(number)
