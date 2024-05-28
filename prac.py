@@ -1,8 +1,6 @@
-import random
+import sys
 
-cards = ["jack", "queen", "king"]
-
-random.shuffle(cards)
-
-for card in cards:
-    print(card)
+try:
+    print("my name is", sys.argv[1])
+except IndexError:
+    print("Too many arguments")
