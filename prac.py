@@ -1,3 +1,5 @@
-import statistics
+import sys
 
-print(statistics.mean([84, 73, 71, 67, 97]))
+if len(sys.argv) < 2:
+    print("Too few arguments")
+if 
