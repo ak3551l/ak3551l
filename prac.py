@@ -1,3 +1,3 @@
-def main():
-    hello()
+from hello import hello
 
+def 
