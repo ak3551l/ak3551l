@@ -1,15 +1,5 @@
-def main():
-    name = input("Enter your name: ")
-    hello(name)
-    goodbye(name)
+import sys
+from sayings import hello
 
-
-
-def hello(input):
-    print("Hello, ", input)
-
-def goodbye(input):
-    print("Goodbye, ", input)
-
-
-main()
+if len(sys.argv) == 2:
+    hello(sys.argv[1])
