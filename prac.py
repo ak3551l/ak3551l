@@ -1,8 +1,8 @@
 import sys
 
 if len(sys.argv) < 2:
-    print("Few arguments")
+    sys.exit("Few arguments")
 elif len(sys.argv) > 2:
-    print("Many arguments")
+    sys.exit("Many arguments")
 
 print("Hello, " + sys.argv[1])
