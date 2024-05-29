@@ -1,6 +1,3 @@
-import sys
+import statistics
 
-try:
-    print("my name is", sys.argv[1])
-except IndexError:
-    print("Too many arguments")
+print(statistics.mean([84, 73, 71, 67, 97]))
