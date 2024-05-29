@@ -4,5 +4,5 @@ if len(sys.argv) < 2:
     print("Few arguments")
 elif len(sys.argv) > 2:
     print("Many arguments")
-else:
-    print("Hello, " + sys.argv[1])
+
+print("Hello, " + sys.argv[1])
