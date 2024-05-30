@@ -1,4 +1,4 @@
-from calc import square
+class Point():
 
-for i in range(10):
-    print(f"Squared of {i+1} is {square(i+1)}." )
+    def __init__(self, input1, input2):
+        self.x = 
