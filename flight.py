@@ -6,3 +6,6 @@ class Flight():
 
     def add_passengers(self, name):
         self.passengers.append(name)
+
+    def open_seats(self):
+        return self.capacity - len(self.passengers)
