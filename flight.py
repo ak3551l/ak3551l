@@ -19,4 +19,10 @@ flight = Flight(3)
 people  = ["Harry", "Ron", "Hermoine", "Ginny"]
 
 for person in people:
-    success = Flight
+    success = flight.add_passengers(person)
+
+    if success:
+        print(f"Added {person} to the flight successfully.")
+
+    else:
+        print(f")
