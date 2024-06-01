@@ -8,7 +8,7 @@ class Flight():
         if not self.open_seats():
             return False
         self.passengers.append(name)
-            return True
+        return True
 
     def open_seats(self):
         return self.capacity - len(self.passengers)
