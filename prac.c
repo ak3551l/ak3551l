@@ -1,11 +1,20 @@
 #include <cs50.h>
 #include <stdio.h>
 
+
+
+
 int main(void)
 {
-    for (int i=0; i < 3; i++)
+    int n = get_int("Height: ");
+    for (int i=0; i<n; i++)
     {
-
-        printf("meow\n");
+        for (int j=0; j<n; j++)
+        {
+            printf("#");
+        }
+        printf("\n");
     }
+
+
 }
