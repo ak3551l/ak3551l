@@ -7,7 +7,7 @@ void print_column(int height);
 int main(void)
 {
     int Score[3];
-    
+
     int Score[0] = get_int("Score: ");
     int Score[1] = get_int("Score: ");
     int Score[2] = get_int("Score: ");
