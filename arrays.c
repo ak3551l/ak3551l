@@ -6,11 +6,13 @@ void print_column(int height);
 
 int main(void)
 {
-    int Score[3];
+    const int N = 3;
+    int Score[N];
 
-    int Score[0] = get_int("Score: ");
-    int Score[1] = get_int("Score: ");
-    int Score[2] = get_int("Score: ");
+    for (int i=0; i < 3; i++)
+    {
+        Score[i] = get_int("Score: ");
+    }
 
-    printf("Average: %f\n", (Score[1] + Score[2] + Score[3]) / 3.0);
+    printf("Average: %f\n", (Score[0] + Score[1] + Score[2]) / 3.0);
 }
