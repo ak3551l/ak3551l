@@ -11,6 +11,8 @@
                     const li = document.createElement('li');
                     li.innerHTML  = task;
 
+                    document.querySelector('#tasks').append(li)
+
                     //Stop form from submitting.
                     return false;
                 }
