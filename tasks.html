@@ -9,7 +9,7 @@
                 document.querySelector('#submit').disabled = true;
 
                 document.querySelector('#task').onkeyup  = () => {
-                    
+                    document.querySelector('#submit').disabled = false;
                 }
 
                 document.querySelector('form').onsubmit = () => {
