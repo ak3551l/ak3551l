@@ -5,6 +5,13 @@
         <script>
 
             document.addEventListener('DOMContentLoaded', function() {
+
+                document.querySelector('#submit').disabled = true;
+
+                document.querySelector('#task').onkeyup  = () => {
+                    
+                }
+
                 document.querySelector('form').onsubmit = () => {
                     const task = document.querySelector('#task').value;
 
@@ -30,7 +37,7 @@
         </ul>
         <form>
             <input id="task" placeholder="New Task" type="text">
-            <input type="submit">
+            <input id="submit" type="submit">
         </form>
     </body>
 </html>
