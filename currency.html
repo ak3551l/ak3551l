@@ -12,7 +12,7 @@
                 .then(response => response.json())
                 .then(data => {
 
-                    const currency = document.querySelector('#currency').value;
+                    const currency = document.querySelector('#currency').value.toUpperCase();
                     const rate = data.rates[currency];
 
                     if (rate !== undefined) {
