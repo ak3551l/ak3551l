@@ -7,9 +7,9 @@
             document.addEventListener('DOMContentLoaded', function() {
 
 
-                
 
-                document.querySelector('form').onsubmit = function() {
+
+                document.querySelector('form').onsubmit = () => {
                     document.querySelector('#task').value;
 
                     const li = document.createElement('li');
