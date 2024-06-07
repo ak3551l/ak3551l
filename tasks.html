@@ -7,8 +7,14 @@
             document.addEventListener('DOMContentLoaded', function() {
                 document.querySelector('form').onsubmit = function() {
                     document.querySelector('#task').value;
+
+                    const li = document.createElement('li');
+                    li.innerHTML = task;
+
+                    document.querySelector('#tasks').append(li);
+
                 }
-            })
+            });
 
         </script>
     </head>
