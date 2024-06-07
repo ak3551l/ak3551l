@@ -1,13 +1,26 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <string.h>
 
-int main(int argc, string argv[])
+void draw(int n);
+
+
+int main(void)
 {
-    if (argc != 2)
+    int height = get_int("Height: ");
+    draw(height);
+}
+
+
+void draw(int n)
+{
+    for (int i=0; i < n; i++)
     {
-        printf("Missing command line argument\n");
-        return 1;
+        for (int j=0; j < i+1; j++)
+        {
+            printf("#");
+        }
+        printf("\n");
     }
-    printf("Hello, %s\n", argv[1]);
-    return 0;
+
 }
