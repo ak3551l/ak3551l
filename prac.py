@@ -1,45 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Single Page</title>
+        <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
         <style>
-            div {
-                display: none;
+            #app {
+                text-align: center;
+                font-family: sans-serif;
+            }
+
+            #problem {
+                font-size: 72px;
+            }
+
+            #winner {
+                font-size: 72px;
+                color: green;
+            }
+
+            .incorrect {
+                color: red;
             }
         </style>
-
-        <script>
-
-            function showPage(page) {
-
-                document.querySelectorAll('div').forEach(div => {
-                    div.style.display = 'none';
-                })
-                document.querySelector(`#${page}`).style.display = 'block';
-            }
-
-            document.addEventListener('DOMContentLoaded', function() {
-                document.querySelectorAll('button').forEach(button => {
-                    button.onclick = function() {
-                        showPage(this.dataset.page);
-                    }
-                })
-            })
-
-        </script>
+        <title>Counter</title>
     </head>
     <body>
-        <button data-page="page1">Page 1</button>
-        <button data-page="page2">Page 2</button>
-        <button data-page="page3">Page 3</button>
-        <div id="page1">
-            <h1>This is Page 1.</h1>
-        </div>
-        <div id="page2">
-            <h1>This is Page 2.</h1>
-        </div>
-        <div id="page3">
-            <h1>This is Page 3.</h1>
-        </div>
+        <div id="app"></div>
+
+        <script type="text/babel">
+
+            function App() {
+
+                const [state, setState] = React.useState({
+                    num1: 1,
+                    num2: 1,
+                    response: "",
+                    score: 0,
+                    incorrect: false
+                });
+
+                function renderWinScreen() {
+                    return (
+                        <div id="winner">You won!</div>
+                    );
+                }
+
+                function inputKeyPress(event) {
+                    if (event.key === "Enter") {
+                        const answer = parseInt(state.response);
+                        if (answer === state.num1 + state.num2) {
+                            // User got question right
+                            setState({
+                                ...state,
+                                score: state.score + 1,
+                                response: "",
+                                num1: Math.ceil(Math.random() * 10),
+                                num2: Math.ceil(Math.random() * 10),
+                                incorrect: false
+                            });
+                        } else {
+                            // User got question wrong
+                            setState({
+                                ...state,
+                                score: state.score - 1,
+                                response: "",
+                                incorrect: true
+                            })
+                        }
+                    }
+                }
+
+                function updateResponse(event) {
+                    setState({
+                        ...state,
+                        response: event.target.value
+                    });
+                }
+
+                function renderProblem() {
+                    return (
+                        <div>
+                            <div className={state.incorrect ? "incorrect" : ""} id="problem">
+                                {state.num1} + {state.num2}
+                            </div>
+                            <input onKeyPress={inputKeyPress} onChange={updateResponse} autoFocus={true} value={state.response} />
+                            <div>Score: {state.score}</div>
+                        </div>
+                    )
+                }
+
+                if (state.score === 10) {
+                    return renderWinScreen();
+                } else {
+                    return renderProblem();
+                }
+            }
+
+            ReactDOM.render(<App />, document.querySelector("#app"));
+        </script>
     </body>
 </html>
