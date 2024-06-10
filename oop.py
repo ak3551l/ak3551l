@@ -44,7 +44,7 @@ if __name__  == "__main__":
 
 def main():
     student = get_student()
-    print(f"{student[0]} from {student[1]}")
+    print(f"{student['name']} from {student['house']}")
 
 
 
@@ -54,7 +54,7 @@ def get_student():
 
     name = input("Name: ")
     house = input("House: ")
-    return {"name": name,  }
+    return {"name": name, "house": house}
 
 
 
