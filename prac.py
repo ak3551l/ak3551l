@@ -10,7 +10,7 @@ def main():
 
 def get_student():
 
-    student = []
+    student = ()
     student.name = input("Name: ")
     student.house = input("House: ")
     return student
