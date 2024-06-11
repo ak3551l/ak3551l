@@ -12,7 +12,7 @@ def main():
 
 def get_student():
 
-    student = Student()
+
     name = input("Name: ")
     house = input("House: ")
     student = Student(name, house)
