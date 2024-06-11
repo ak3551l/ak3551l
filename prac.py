@@ -1,7 +1,7 @@
 class Student():
     def __init__(self, first, last, house):
 
-        if not :
+        if not first and last:
             raise ValueError("Missing Name")
 
         if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
