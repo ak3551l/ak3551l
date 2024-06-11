@@ -5,9 +5,12 @@ class Student():
         self.house = house
 
 
+    def __str__(self):
+        print(f"{self.name} from {self.house}")
+
 def main():
     student = get_student()
-    print(f"{self.name} from {}")
+    print(student)
 
 
 def get_student():
