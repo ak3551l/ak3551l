@@ -112,3 +112,24 @@ if __name__ == "__main__":
 
 
 
+
+
+
+
+if not name:
+            raise ValueError("Missing Name")
+
+        if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
+            raise ValueError("Invalid House")
+
+        self.name = name
+        self.house = house
+
+
+
+
+
+
+
+
+
