@@ -12,9 +12,9 @@ def main():
 
 def get_student():
 
-    student = ()
+    student = Student()
     name = input("Name: ")
-    student.house = input("House: ")
+    house = input("House: ")
     return student
 
 if __name__ == "__main__":
