@@ -12,7 +12,7 @@ class Student():
 
 
     def __str__(self):
-        print(f"{student.name} from {student.house}")
+        print(f"{self.name} from {self.house}")
 
 
 
