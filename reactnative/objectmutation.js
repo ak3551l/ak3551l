@@ -8,7 +8,6 @@ const o = {
 
 const o2 = Object(assign({}, o))
 
-
 // o2.a = 'new value'
 
 // console.log(o.a);
@@ -38,3 +37,4 @@ const o3 = deepCopy(o)
 
 o.obj.key = 'new key!'
 console.log(o3.obj.key)
+
