@@ -9,6 +9,7 @@ function  makeHelloFunction() {
 
 const sayHello = makeHelloFunction()
 
-// console.log(message)
+console.log('typeof message: ', typeof message)
+console.log(sayHello.toString())
 
 sayHello()
