@@ -7,9 +7,8 @@ function  makeHelloFunction() {
     return sayHello
 }
 
-const sayHello = makeHelloFunction()
+const functionArr = makeHelloFunction()
 
-console.log('typeof message: ', typeof message)
-console.log(sayHello.toString())
+console.log(i)
 
-sayHello()
+functionArr()
