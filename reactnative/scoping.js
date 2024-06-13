@@ -1,5 +1,7 @@
 thisIsNotHoisted()
 
+thisIsAlsoVariable = "hello"
+
 const thisIsAConst = 50
 // thisIsAConst++ // error!
 
