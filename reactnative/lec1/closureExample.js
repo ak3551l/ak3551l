@@ -9,6 +9,6 @@ function  makeHelloFunction() {
 
 const sayHello = makeHelloFunction()
 
-console.log(message)
+// console.log(message)
 
 sayHello()
