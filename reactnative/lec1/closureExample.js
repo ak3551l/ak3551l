@@ -7,8 +7,8 @@ function  makeHelloFunction() {
     return sayHello
 }
 
-const functionArr = makeHelloFunction()
+const sayHello = makeHelloFunction()
 
-console.log(i)
+console.log(sayHello.toString())
 
-functionArr()
+sayHello()
