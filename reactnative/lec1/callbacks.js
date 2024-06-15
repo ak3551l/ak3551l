@@ -1,5 +1,5 @@
 function doSomething(callback) {
-    callback(1)
+    setTimeout(function {callback(1)}, 1000)
 }
 
 doSomething(console.log)
