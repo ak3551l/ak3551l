@@ -6,10 +6,12 @@ fetch(url)
         return res.json()
     })
     .then(function(json) {
-        return ({})
+        return ({
+            importantData: json.importantData,
+        })
     })
     .then(function(data) {
-
+        console.log(data)
     })
     .catch(function(err){
         // handle error?
