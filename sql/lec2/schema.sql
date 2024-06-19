@@ -1,4 +1,4 @@
-CREATE TABLE "riders" (
+CREATE TABLE "cards" (
     "id" INTEGER,
     "name" TEXT,
     PRIMARY KEY("id")
@@ -15,12 +15,13 @@ CREATE TABLE "stations" (
 
 CREATE TABLE "swipes" (
     "id" INTEGER,
-    "rider_id" INTEGER,
+    "card_id" INTEGER,
     "station_id" INTEGER,
-    "type" TEXT,
-    "datetime" NUMERIC,
+    "type" TEXT NOT NULL CHECK("type" IN ('enter', 'exit', 'deposit')),
+    "datetime" NUMERIC NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "amout" NUMERIC NOT NULL CHECK("amount" != 0),
     PRIMARY KEY("id"),
-    FOREIGN KEY("rider_id") REFERENCES "riders"("id"),
+    FOREIGN KEY("card_id") REFERENCES "cards"("id"),
     FOREIGN KEY("station_id") REFERENCES "stations"("id")
 );
 
