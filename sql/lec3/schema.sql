@@ -6,6 +6,11 @@ CREATE TABLE "collections" (
     PRIMARY KEY("id")
 );
 
+CREATE TABLE "artists" (
+    "id" INTEGER,
+    "name" TEXT NOT NULL,
+    PRIMARY KEY("id")
+);
 
 
 CREATE TABLE "created" (
