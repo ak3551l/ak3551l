@@ -1,6 +1,3 @@
-import random
+import sys
 
-cards = ["Jack", "Queen", "King"]
-random.shuffle(cards)
-
-print(cards)
+print(")
