@@ -10,4 +10,4 @@ def test_default():
 def test_arguments():
 
     for name in ["Harry", "Hermoine", "Ron"]:
-        assert 
+        assert hello(name) == f"hello, {name}"
