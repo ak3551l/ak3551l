@@ -1,11 +1,3 @@
-names = []
-
-with open("names.txt", "r") as file:
-
+with open("students.csv", "r") as file:
     for line in file:
-        names.append(line.rstrip())
-
-for name in sorted(names, reverse=True):
-    print("Hello, ", name)
-
-print(names)
+        row = line.rstrip()
