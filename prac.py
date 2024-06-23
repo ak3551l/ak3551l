@@ -1,13 +1,7 @@
-from hello import hello
+names = []
 
-def test_hello():
-    assert hello("David") == "hello, David"
+for _ in range(3):
+    name = input("Enter your  name: ")
+    names.append(name)
 
-
-def test_default():
-    assert hello() == "hello, world"
-
-def test_arguments():
-
-    for name in ["Harry", "Hermoine", "Ron"]:
-        assert hello(name) == f"hello, {name}"
+print(names)
