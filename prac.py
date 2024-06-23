@@ -1,11 +1,6 @@
-name = input("Enter your name: ")
+import random
 
-if name == "Anshu":
-    print("Abhijeet's Son")
+cards = ["Jack", "Queen", "King"]
+random.shuffle(cards)
 
-elif name == "Aman":
-    print("Anshu uncle")
-
-else:
-    print("Anshu Father")
-
+print(cards)
