@@ -1,5 +1,7 @@
-with open("names.txt", "r") as file:
-    lines = file.readlines()
+file = open("names.txt", "r")
+lines = file.readlines()
 
 for line in lines:
-    print("Hello, ", line.rstrip())
+    print("Hello, ",line)
+
+file.close()
