@@ -2,4 +2,4 @@ with open("names.txt", "a") as file:
     lines = file.readlines()
 
 for line in lines:
-    print(f"Hello, {line}")
+    print("Hello, ", line.rstrip())
