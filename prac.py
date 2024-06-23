@@ -1,7 +1,4 @@
-file = open("names.txt", "r")
-lines = file.readlines()
+with open("names.txt", "r") as file:
 
-for line in lines:
-    print("Hello, ",line.lstrip())
-
-file.close()
+    for line in file:
+        print("Hello, ", line.rstrip())
