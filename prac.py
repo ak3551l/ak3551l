@@ -2,6 +2,6 @@ file = open("names.txt", "r")
 lines = file.readlines()
 
 for line in lines:
-    print("Hello, ",line)
+    print("Hello, ",line.lstrip())
 
 file.close()
