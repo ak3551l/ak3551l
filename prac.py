@@ -1,8 +1,8 @@
-students = []
+name = input("Name: ")
 
-file = open("students.csv", "a")
-file.write
-
+file = open("names.csv", "a")
+file.write(f"{name}\n")
+file.close()
 
 
 
