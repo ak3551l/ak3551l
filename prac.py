@@ -2,7 +2,7 @@ email = input("What's your email?: ").rstrip()
 
 username, domain = email.split("@")
 
-if username and "." in domain:
+if username and domain.endswith(".edu"):
     print("Valid")
 
 else:
