@@ -1,15 +1,22 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int add(int a, int b);
-
 int main(void) {
     int x = get_int("X: ");
     int y = get_int("Y: ");
-    printf("%i\n", add(x, y));
+
+
+
+    if (x > y) {
+        printf("X is greater than Y.\n");
+    }
+
+    if (x < y) {
+        printf("X is less than Y.\n");
+    }
+
+    else {
+        printf("X is equal to Y.\n");
+    }
 }
 
-int add(int a, int b) {
-    int c = a + b;
-    return c;
-}
