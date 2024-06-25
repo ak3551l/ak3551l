@@ -1,8 +1,9 @@
-name = input("Name: ")
 
-file = open("names.csv", "a")
-file.write(f"{name}\n")
-file.close()
 
+with open("names.txt", "r") as file:
+    lines = file.readlines()
+
+for line in lines:
+    print(f"Hello, ",line.rstrip())
 
 
