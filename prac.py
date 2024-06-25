@@ -1,6 +1,10 @@
+import re
+
 name = input("Enter your name: ")
 
-if "," in name:
+matches = re.search(r"^(.+), (.+)$", name)
+
+if matches:
     last, first = name.split(",")
     name = f"{first} {last}"
     print("Hello,", name)
