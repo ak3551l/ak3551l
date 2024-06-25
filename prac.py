@@ -1,9 +1,6 @@
-import re
+name = input("Enter your name: ")
 
-email = input("What's your email?: ").rstrip()
-
-if re.search(r"\w+@\w+\.(com|edu|gov|net|gmail)$", email, re.IGNORECASE):
-    print("Valid")
-
-else:
-    print("Invalid")
+if "," in name:
+    last, first = name.split(",")
+    name = f"{first} {last}"
+    print("Hello,", name)
