@@ -1,17 +1,15 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <string.h>
 
+int main(void) {
 
-int main (int argc, string argv[]) {
+    string phrase = get_string("Phrase: ");
+    int length = strlen(phrase);
 
-    if (argc != 2){
-        printf("Missing command line arguments\n");
-        return 1;
+    for (int i = 0; i < length; i++)
+    {
+        printf("%s\n", phrase[i]);
     }
-
-    printf("%s\n", argv[1]);
-    return 0;
-
 }
-
 
