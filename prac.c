@@ -1,22 +1,21 @@
 #include <stdio.h>
 #include <cs50.h>
+#include <string.h>
+
+void print_column(int Height);
 
 int main(void) {
-    int x = get_int("X: ");
-    int y = get_int("Y: ");
 
+    int Height = get_int("Height: ");
+    print_column(Height);
 
-
-    if (x > y) {
-        printf("X is greater than Y.\n");
-    }
-
-    if (x < y) {
-        printf("X is less than Y.\n");
-    }
-
-    else {
-        printf("X is equal to Y.\n");
-    }
 }
 
+
+void print_column(int height)
+{
+    for (int i = 0; i < height; i++)
+    {
+        printf("#\n");
+    }
+}
