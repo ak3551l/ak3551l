@@ -4,7 +4,7 @@
 
 int main(void) {
 
-    string s = "Hi!";
+    string words[2];
 
-    printf("%c%c%c\n", s[0], s[1], s[2]);
+    words[]
 }
