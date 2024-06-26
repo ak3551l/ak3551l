@@ -4,8 +4,11 @@
 
 int main (int argc, string argv[]) {
 
-    for (int i = 0; i < argc; i++)
-    {
-        printf("Hello, %s\n", argv[i]);
+    if (argc != 2){
+        printf("Missing command line arguments\n");
+        return 1;
     }
-}
+
+    printf("%s\n", argv[i])
+
+
