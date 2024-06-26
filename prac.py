@@ -1,1 +1,1 @@
-print("Hello", "Abhijeet")
+print(82, 2, " ", 3)
