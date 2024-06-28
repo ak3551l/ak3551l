@@ -15,5 +15,6 @@ CREATE TABLE "artists" (
 CREATE TABLE "created" (
     "artist_id" INTEGER,
     "collection_id" INTEGER,
-    FOREIGN KEY("artist_id") REFERENCES "artists"("id") 
+    FOREIGN KEY("artist_id") REFERENCES "artists"("id") ON DELETE CASCADE,
+    FOREIGN KEY("collection_id") REFERENCES "collections"("id") ON DELETE CASCADE
 )
