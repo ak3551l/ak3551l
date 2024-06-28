@@ -5,3 +5,5 @@ CREATE TABLE collections (
     "acquired" NUMERIC,
     PRIMARY KEY("id")
 );
+
+
