@@ -1,9 +1,17 @@
+// Debug the code below to solve the problem
+
 #include <stdio.h>
 
 int main() {
-  int a = 5;
-  int b = 3;
+    int N, sum = 0;
+    scanf("%d", &N);
+    int i = 0;
 
-  printf("%d\n", a = b);
-  return 0;
+    while (i <= N) {
+        sum += i;
+        i ++;
+    };
+
+    printf("%d", sum);
+    return 0;
 }
