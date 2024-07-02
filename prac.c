@@ -1,17 +1,15 @@
-// Debug the code below to solve the problem
-
 #include <stdio.h>
 
 int main() {
-    int N, sum = 0;
-    scanf("%d", &N);
-    int i = 0;
+    int num, count = 0;
+    scanf("%d", &num);
 
-    while (i <= N) {
-        sum += i;
-        i ++;
-    };
-
-    printf("%d", sum);
+    while (num != 0) {
+        // Update your code below this line
+        count ++;
+        num = num / 10;
+        
+    }
+    printf("%d", count);
     return 0;
 }
