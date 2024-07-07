@@ -1,4 +1,6 @@
-name = input("Name: ")
+name = input("Enter your name: ")
 
-with open("friends.csv", "a") as file:
-    write = file.write(f"{name}\n")
+for i in range(len(name)):
+    print(i+1)
+
+print("Hello, World")
