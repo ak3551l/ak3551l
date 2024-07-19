@@ -1,7 +1,8 @@
 def main():
     student = get_student()
     print(f"{student["name"]} from {student["house"]}")
-    if 
+    if student["name"] == "Padma":
+        student["house"] = "Ravenclaw"
 
 
 def get_student():
