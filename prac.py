@@ -1,6 +1,15 @@
-name = input("Enter your name: ")
+def main():
+    student = get_student()
 
-for i in range(len(name)):
-    print(i+1)
+    if student[0] == "Padma":
+        student[1] = "Ravenclaw"
+    print(f"{student[0]} from {student[1]}")
 
-print("Hello, World")
+
+def get_student():
+    name = input("Name: ")
+    house = input("House: ")
+    return name, house
+
+if __name__ == "__main__":
+    main()
