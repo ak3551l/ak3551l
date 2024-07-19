@@ -1,13 +1,14 @@
 def main():
     student = get_student()
-    printf
+    print(f"{student[0]} from {student[1]}")
 
 
 
 def get_student():
-    name = input("Name: ")
-    house = input("House: ")
-    return name, house
+    student = {}
+    student["name"] = input("Name: ")
+    student["house"] = input("House: ")
+    return 
 
 if __name__ == "__main__":
     main()
