@@ -10,7 +10,3 @@ int main(void) {
 
 
 
-printf("
-%i
-", sum
-;
