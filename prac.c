@@ -1,9 +1,17 @@
 #include <stdio.h>
-#include <cs50.h>
-#include <string.h>
 
-
-int main(int argc, string argv[]) {
-
+int main(void) {
     
 }
+
+int a = 8;
+int b = 56;
+int sum
+=
+ a
++
+b;
+printf("
+%i
+", sum
+;
