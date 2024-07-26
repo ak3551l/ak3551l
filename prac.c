@@ -4,7 +4,7 @@ int main(void) {
     int a = 8;
     int b = 56;
     int sum = a + b;
-    printf("%i\n", sum);
+    printf("%d\n", sum);
 
 }
 
