@@ -1,8 +1,17 @@
-import bank;
+class Student{
+    String name;
+    static String school;
 
-class OOPS {
+    public static void changeSchool() {
+        school = "newschool";
+    }
+}
+
+public class OOPS {
     public static void main(String[] args) {
-        bank.Account account1 = new bank.Account();
-        account1.name = "customer1";
+        Student.school = "ABC";
+        Student student1 = new Student();
+        student1.name = "Tony";
+        System.out.println(Student.school);
     }
 }

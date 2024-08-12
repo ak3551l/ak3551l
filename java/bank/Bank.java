@@ -7,11 +7,12 @@ class Account  {
 
     // getters & setters
     public String getPassword() {
+        setPassword(randomPass);
         return this.password;
     }
 
     // setters
-    public void setPassword(String pass) {
+    private void setPassword(String pass) {
         this.password = pass;
     }
 
@@ -27,3 +28,4 @@ public class Bank {
 
     }
 }
+
