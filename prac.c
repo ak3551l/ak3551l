@@ -7,8 +7,12 @@ int main(void) {
 
     for (int i=0; i < row; i++) {
         // for space
-        for (int j=0; j < col; j++) {
+        for (int j=0; j < col-i-1; j++) {
+            printf(" ");
+        }
 
+        for (int j=0; j  < col; j++) {
+            printf("*\n");
         }
     }
 
