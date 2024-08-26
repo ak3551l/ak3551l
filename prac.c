@@ -1,18 +1,16 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int add(int a, int b);
-
 int main(void) {
-    int x = get_int("X: \n");
-    int y = get_int("Y: \n");
+    int row = 4;
+    int col = 5;
 
-    printf("Add: %i\n", add(x, y));
+    for (int i=0; i < row; i++) {
+        for (int j=0; j < col; j++) {
+            
+        }
+    }
+
+
 }
-
-int add(int a, int b) {
-    int c = a + b;
-    return c;
-}
-
 
