@@ -2,13 +2,10 @@
 #include <cs50.h>
 
 int main (void) {
-    char c = get_char("Do you agree? ");
 
-    if (c  == 'Y' || c == 'y') {
-        printf("Agreed.\n");
-    }
-
-    if (c == 'N' || c == 'n') {
-        printf("Not Agreed.\n");
+    int i = 0;
+    while (i < 3) {
+        printf("Meow\n");
+        i++;
     }
 }
