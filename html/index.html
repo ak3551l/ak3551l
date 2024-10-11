@@ -4,10 +4,11 @@
         <title>Counter</title>
         <script>
             function hello() {
-                if (document.querySelector('h1').innerHTML === 'Hello!') {
-                    document.querySelector('h1').innerHTML = 'Goodbye!';
+                const heading = document.querySelector('h1');
+                if (heading.innerHTML === 'Hello!') {
+                    heading.innerHTML = 'Goodbye!';
                 } else {
-                    document.querySelector('h1') = 'Hello!';
+                    heading = 'Hello!';
                 }
             }
         </script>
