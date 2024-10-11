@@ -3,10 +3,16 @@
     <head>
         <title>Counter</title>
         <script>
-
+            function hello() {
+                if (document.querySelector('h1').innerHTML === 'Hello!') {
+                    document.querySelector('h1') = 'Goodbye!';
+                } else {
+                    document.querySelector('h1') = 'Hello!';
+                }
+            }
         </script>
     </head>
     <body>
-        
+        <h1>Hello!</h1>
     </body>
 </html>
