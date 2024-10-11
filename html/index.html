@@ -3,18 +3,14 @@
     <head>
         <title>Counter</title>
         <script>
-            function hello() {
-                const heading = document.querySelector('h1');
-                if (heading.innerHTML === 'Hello!') {
-                    heading.innerHTML = 'Goodbye!';
-                } else {
-                    heading = 'Hello!';
-                }
+            function count() {
+                count++;
+                document.querySelector('h1').innerHTML = counter;
             }
         </script>
     </head>
     <body>
-        <h1>Hello!</h1>
-        <button onclick='hello()'>Click Here!</button>
+        <h1>0</h1>
+        <button onclick='count()'>Count</button>
     </body>
 </html>
