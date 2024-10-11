@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Counter</title>
+        <title>Greeting</title>
         <script>
-            let counter = 0;
-            function count() {
-                counter++;
-                document.querySelector('h1').innerHTML = counter;
-
-                if (counter % 10 === 0) {
-                    alert(`count is now ${counter}`);
-                }
-
-                document.addEventListener('DOMContentLoaded', function() {
-                    document.querySelector('button').onclick = count;
+            document.addEventListener('DOMContentLoaded', function() {
+                if(document.querySelector('form').onsubmit = function() {
+                    const name = document.querySelector('#name').value;
+                    alert(`Hello! ${name}`);
                 });
-
-            }
+            });
         </script>
     </head>
     <body>
-        <h1>0</h1>
-        <button onclick='count()'>Count</button>
+        <h1>Hello</h1>
+        <form>
+            <input autofocus id="name" placeholder = "Name" type="text">
+            <input type = "submit">
+        </form>
     </body>
 </html>
