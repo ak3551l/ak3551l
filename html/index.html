@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Greeting</title>
+        <title>Colors</title>
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                // Change the font color to red
-                document.querySelector('#red').onclick = function() {
-                    document.querySelector('#hello').style.color = 'red'
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('select').onchange = () => {
+                    document.querySelector('#hello').style.color = this.value;
                 }
-
-                // Change the font color to blue
-                document.querySelector('#blue').onclick = function() {
-                    document.querySelector('#hello').style.color = 'blue'
-                }
-
-                // Change the font color to green
-                document.querySelector('#green').onclick = function() {
-                    document.querySelector('#hello').style.color = 'green'
-                }
-            })
+            });
         </script>
     </head>
     <body>
-        <h1 id="hello">Hello!</h1>
-        <button id="red">Red</button>
-        <button id="blue">Blue</button>
-        <button id="green">Green</button>
+        <h1>Tasks</h1>
+        <ul id="tasks">
+
+        </ul>
+
+        <form>
+            <input id="task" placeholder="New Task" type="text">
+            <input id="submit" type="submit">
+        </form>
+
     </body>
 </html>
