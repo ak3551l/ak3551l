@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Colors</title>
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                document.querySelector('select').onchange = () => {
-                    document.querySelector('#hello').style.color = this.value;
-                }
-            });
-        </script>
-    </head>
-    <body>
-        <h1>Tasks</h1>
-        <ul id="tasks">
-
-        </ul>
-
-        <form>
-            <input id="task" placeholder="New Task" type="text">
-            <input id="submit" type="submit">
-        </form>
-
-    </body>
-</html>
+<form method="GET" action="/submit">
+    <input type="email" required>
+    <input type="submit">
+</form>
