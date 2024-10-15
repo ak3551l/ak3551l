@@ -1,8 +1,13 @@
-const key = {
-    fullname: {
-        'first_name': 'Abhijeet',
-        'last_name': 'Kumar'
-    }
+const myProfile = {
+    name: 'Mehul',
+    age: 22
 }
 
-console.log(key.fullname['first_name']);
+const secondProfile = {
+    name: 'John',
+    age: 42
+}
+
+function primitiveMutate(primitive) {
+    primitive++
+}
