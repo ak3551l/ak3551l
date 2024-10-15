@@ -1,6 +1,12 @@
-let myFriends = ["Abhijeet"]
-for (let i=0; i<11; i++) {
-    myFriends.push(i)
+let evenNumbers = [];
+let oddNumbers = [];
+for (let i=0; i<=20; i++) {
+    if (i % 2 === 0) {
+        evenNumbers.push(i);
+    } else {
+        oddNumbers.push(i);
+    }
 }
 
-console.log(myFriends);
+console.log(evenNumbers);
+console.log(oddNumbers);
