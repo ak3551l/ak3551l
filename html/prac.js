@@ -1,4 +1,6 @@
 let myFriends = ["Abhijeet"]
-for (int i=0; i<11; i++) {
+for (let i=0; i<11; i++) {
     myFriends.push(i)
 }
+
+console.log(myFriends);
