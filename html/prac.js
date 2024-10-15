@@ -5,4 +5,4 @@ const key = {
     }
 }
 
-console.log(key['fullname']['first_name']);
+console.log(key.fullname['first_name']);
