@@ -1,5 +1,5 @@
 const  heading = document.querySelector('.hello');
-heeading.innerText = 'hello Mehul';
+heading.innerText = 'hello Mehul';
 
 const allListItems = document.querySelectorAll('ul li');
 
