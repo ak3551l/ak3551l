@@ -1,34 +1,46 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>codeDamn HTML Playground</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/styles.css" />
-        <script>
-            const incrementBtn = document.querySelector('#increment');
-            const decrementBtn = document.querySelector('#decrement');
-            const counterEl = document.getElementById('counter');
-            let counter = 0;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
 
-            function incrementCounter() {
-                counter++;
-                counterEl.innerText = counter
-            }
+    <h1>Counter</h1>
+    <p id="count">0</p>
+    <button id="increment">Increment</button>
+    <button id="decrement">Decrement</button>
 
-            function decrementCounter() {
-                counter--;
-                counterEl.innerText = counter;
-            }
+    <script>
+        let count = 0;
 
-            incrementBtn.addEventListener('onclick', incrementCounter);
-            decrementBtn.addEventListener('onclick', decrementCounter);
-        </script>
-    </head>
-    <body>
-        <h1>Counter: <span id="counter">0</span></h1>
-        <button id="increment">Increment counter</button>
-        <button id="decrement">Decrement counter</button>
+        const countDisplay = document.getElementById('count');
+        const incrementButton = document.getElementById('increment');
+        const decrementButton = document.getElementById('decrement');
 
-    </body>
+        incrementButton.addEventListener('click', () => {
+            count++;
+            countDisplay.textContent = count;
+        });
+
+        decrementButton.addEventListener('click', () => {
+            count--;
+            countDisplay.textContent = count;
+        });
+    </script>
+
+</body>
 </html>
