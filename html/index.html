@@ -5,27 +5,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/styles.css" />
-    </head>
-    <body>
-        <h1 class="hello">Hello World</h1>
-        <ul>
-            <li>List item 1</li>
-            <li>List item 2</li>
-            <li>List item 3</li>
-        </ul>
-
         <script>
             const  heading = document.querySelector('.hello');
-heading.innerText = 'hello Mehul';
+            heading.innerText = 'hello Mehul';
 
-const allListItems = document.querySelectorAll('ul li');
+            const allListItems = document.querySelectorAll('ul li');
 
-for(let i=0; i<allListItems.length; i++) {
-    const listItem = allListItems[i];
-    listItem.innerText = 'YOOOOOO';
-}
-console.log(allListItems);
+            for(let i=0; i<allListItems.length; i++) {
+                const listItem = allListItems[i];
+                listItem.innerText = 'YOOOOOO';
+            }
+            console.log(allListItems);
 
         </script>
+    </head>
+    <body>
+        <h1>Counter: <span id="counter">0</span></h1>
+        <button id="increment">Click Here</button>
+
     </body>
 </html>
