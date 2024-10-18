@@ -1,4 +1,10 @@
 const  heading = document.querySelector('.hello');
 heeading.innerText = 'hello Mehul';
+
 const allListItems = document.querySelectorAll('ul li');
-console.log(heading);
+
+for(let i=0; i<allListItems.length; i++) {
+    const listItem = allListItems[i];
+    listItem.innerText = 'YOOOOOO';
+}
+console.log(allListItems);
