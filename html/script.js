@@ -1,3 +1,6 @@
+import _ from 'lodash';
+
+
 const  heading = document.querySelector('.hello');
 heading.innerText = 'hello Mehul';
 
