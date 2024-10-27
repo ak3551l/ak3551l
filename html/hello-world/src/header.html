@@ -19,11 +19,16 @@
 
         console.log("hello" && "mehul")
         let age = 20;
+
+        function buttonClickFn(){
+            console.log('I was presseed')
+        }
         // Your React component
         function Header() {
             return (
                 <div>
                     <h1>Hello World</h1>
+                    <button onClick={buttonClickFn}>Click Me</button>
                     <Custom name="Abhijeet" />
 
                 </div>
