@@ -12,12 +12,14 @@
     <div id="header"></div>
 
     <script type="text/babel">
+
+        console.log("hello" && "mehul")
         // Your React component
         function Header() {
             return (
                 <div>
-                    <h1>This is header</h1>
-                    <p>Hello {2+3} </p>
+                    <h1>Hello World</h1>
+                    {false && <p>which maybe visible</p>}
 
                 </div>
             );
