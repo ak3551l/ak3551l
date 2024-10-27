@@ -11,7 +11,7 @@
 <body>
     <div id="header"></div>
 
-    <script type="text/babel">
+    <script type="module">
 
         function Custom(props) {
             return <h1>Hello, {props.name}</h1>
@@ -20,6 +20,8 @@
         console.log("hello" && "mehul")
         let age = 20;
 
+        const counter = 0;
+
         function buttonClickFn(){
             console.log('I was presseed')
         }
@@ -27,9 +29,9 @@
         function Header() {
             return (
                 <div>
-                    <h1>Hello World</h1>
-                    <button onClick={buttonClickFn}>Click Me</button>
-                    <Custom name={age**2} greetingMessage="Hola" />
+                    <h1>Counter: {counter}</h1>
+                    <button onClick={buttonClickFn}>increase the Button</button>
+                    <button onClick={buttonClickFuun}>Decrease the counter</button>
 
                 </div>
             );
