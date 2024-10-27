@@ -14,12 +14,13 @@
     <script type="text/babel">
 
         console.log("hello" && "mehul")
+        let age = 20;
         // Your React component
         function Header() {
             return (
                 <div>
                     <h1>Hello World</h1>
-                    {false && <p>which maybe visible</p>}
+                    {age > 18 && <p>which maybe visible</p>}
 
                 </div>
             );
