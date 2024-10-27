@@ -13,8 +13,8 @@
 
     <script type="text/babel">
 
-        function Custom(prop) {
-            return <h1>Hello, Mehul</h1>
+        function Custom(props) {
+            return <h1>Hello, {props.name}</h1>
         }
 
         console.log("hello" && "mehul")
@@ -24,7 +24,7 @@
             return (
                 <div>
                     <h1>Hello World</h1>
-                    <Custom name="mehul" /> // props = {name="mehul"}
+                    <Custom name="mehul" />
 
                 </div>
             );
