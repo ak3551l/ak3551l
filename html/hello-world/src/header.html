@@ -13,6 +13,10 @@
 
     <script type="text/babel">
 
+        function Custom() {
+            return <h1>Hello, Mehul</h1>
+        }
+
         console.log("hello" && "mehul")
         let age = 20;
         // Your React component
@@ -20,7 +24,7 @@
             return (
                 <div>
                     <h1>Hello World</h1>
-                    {age > 18 && <p>which maybe visible</p>}
+                    <Custom />
 
                 </div>
             );
