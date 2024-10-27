@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>React in HTML</title>
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
 </head>
 <body>
     <div id="header"></div>
 
-    <script type="module">
-
-        import React, { useState } from 'react'
+    <script type="text/babel">
 
         function Custom(props) {
             return <h1>Hello, {props.name}</h1>
@@ -23,20 +22,15 @@
 
         const counter = 0;
 
-
+        function buttonClickFn(){
+            console.log('I was presseed')
+        }
         // Your React component
         function Header() {
-
-            const [counter, setCounter] = useState[]
-
-            function buttonClickFn(){
-                console.log('I was presseed')
-            }
-
             return (
                 <div>
                     <h1>Counter: {counter}</h1>
-                    <button onClick={buttonClickFn}>increase the Button</button>
+                    <button onClick={buttonClickFn}>Increase the Button</button>
                     <button onClick={buttonClickFuun}>Decrease the counter</button>
 
                 </div>
