@@ -3,42 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React in HTML</title>
+    <title>React Counter</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <div id="header"></div>
+<div id="root"></div>
 
-    <script type="text/babel">
+<script>
+    const { useState } = React;
 
-        function Custom(props) {
-            return <h1>Hello, {props.name}</h1>
-        }
+    function Counter() {
+        const [count, setCount] = useState(0);
 
-        console.log("hello" && "mehul")
-        let age = 20;
+        const increment = () => {
+            setCount(count + 1);
+        };
 
-        const counter = 0;
+        return (
+            <div>
+                <h1>Counter: {count}</h1>
+                <button onClick={increment}>Increment</button>
+            </div>
+        );
+    }
 
-        function buttonClickFn(){
-            console.log('I was presseed')
-        }
-        // Your React component
-        function Header() {
-            return (
-                <div>
-                    <h1>Counter: {counter}</h1>
-                    <button onClick={buttonClickFn}>Increase the Button</button>
-                    <button onClick={buttonClickFuun}>Decrease the counter</button>
-
-                </div>
-            );
-        }
-
-        // Render the React component to the DOM
-        ReactDOM.render(<Header />, document.getElementById('header'));
-    </script>
+    ReactDOM.render(<Counter />, document.getElementById('root'));
+</script>
 </body>
 </html>
